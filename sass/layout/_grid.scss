@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+    }
+    // grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 8rem;
+    }
+}
+
+.grid-4-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include respond(tab-port) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

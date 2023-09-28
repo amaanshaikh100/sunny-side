@@ -1,0 +1,42 @@
+.footer {
+    font-family: $font-secondary;
+    text-align: center;
+    padding: 8rem 0;
+    background-color: $col-cyan-light;
+
+    &__logo {
+        width: 20rem;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__links {
+
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: $col-cyan;
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            color: $col-white;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        gap: 3.5rem;
+    }
+}
